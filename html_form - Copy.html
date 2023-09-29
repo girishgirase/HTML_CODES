@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Form</title>
+</head>
+<body>
+    <form method="POST" action="html_list.html">
+    <table align="center" border="1">
+        <tr>
+            <td><label for="uname"> Username:</label></td>
+            <td><input type="text" placeholder="Enter Username" size="22" name="uname" id="uname"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" value="nirali@gmail.com" readonly name="email"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" placeholder="Enter Password" maxlength="10" name="pwd"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td>
+                <textarea rows="5" cols="22" name="addr">Pune</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gen" checked value="M">Male
+                <input type="radio" name="gen" value="F">FeMale
+            </td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td>
+                <select name="cntry">
+                    <option value="0">Select Country</option>
+                    <option selected value="Ind">India</option>
+                    <option value="usa">USA</option>
+                    <option value="ger">Germany</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td>
+                <input type="checkbox" checked name="hby" value="G">Game
+                <input type="checkbox" checked name="hby" value="c">Cricket
+                <input type="checkbox" name="hby" value="l">Ludo
+            </td>
+        </tr>
+        <tr>
+            <td>Courses: </td>
+            <td>
+                <select multiple size="3" name="crs">
+                    <option>Select Courses</option>
+                    <option selected>HTML</option>
+                    <option selected>CSS</option>
+                    <option>JS</option>
+                    <option>Python</option>
+                    <option>PHP</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>File:</td>
+            <td><input type="file" name="img"></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <input type="submit" value="SignUp" name="sub">
+                <input type="reset" value="Cancel" name="reset">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
